@@ -12,7 +12,7 @@ def create_board_hash
             positionY += 1
         end  
     end
-    display_board(board)
+    return board
 end
 
 def print_tile(board,tile_number)
@@ -32,4 +32,3 @@ def display_board(board)
     puts""
 end
 
-create_board_hash

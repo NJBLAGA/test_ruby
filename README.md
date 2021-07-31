@@ -14,11 +14,11 @@ gem 'toy_robot_challenge'
 
 And then execute:
 
-    $ bundle install
+`$ bundle install`
 
 Or install it yourself as:
 
-    $ gem install toy_robot_challenge
+`$ gem install toy_robot_challenge`
 
 ## Usage
 
@@ -29,10 +29,6 @@ TODO: Write usage instructions here
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/toy_robot_challenge.
 
 ## License
 
@@ -74,4 +70,9 @@ The gem is available as open source under the terms of the [MIT License](https:/
 
 # REPORT
 # => print CURRENT POSITION IF VALID
+```
+
+```plain
+{:Tile1=>{:x=>"0", :y=>"0"}, :Tile2=>{:x=>"1", :y=>"0"}, :Tile3=>{:x=>"2", :y=>"0"}, :Tile4=>{:x=>"3", :y=>"0"}, :Tile5=>{:x=>"4", :y=>"0"}, :Tile6=>{:x=>"0", :y=>"1"}, :Tile7=>{:x=>"1", :y=>"1"}, :Tile8=>{:x=>"2", :y=>"1"}, :Tile9=>{:x=>"3", :y=>"1"}, :Tile10=>{:x=>"4", :y=>"1"}, :Tile11=>{:x=>"0", :y=>"2"}, :Tile12=>{:x=>"1", :y=>"2"}, :Tile13=>{:x=>"2", :y=>"2"}, :Tile14=>{:x=>"3", :y=>"2"}, :Tile15=>{:x=>"4", :y=>"2"}, :Tile16=>{:x=>"0", :y=>"3"}, :Tile17=>{:x=>"1", :y=>"3"}, :Tile18=>{:x=>"2", :y=>"3"}, :Tile19=>{:x=>"3", :y=>"3"}, :Tile20=>{:x=>"4", :y=>"3"}, :Tile21=>{:x=>"0", :y=>"4"}, :Tile22=>{:x=>"1", :y=>"4"}, :Tile23=>{:x=>"2", :y=>"4"}, :Tile24=>{:x=>"3", :y=>"4"}, :Tile25=>{:x=>"4", :y=>"4"}}
+
 ```
