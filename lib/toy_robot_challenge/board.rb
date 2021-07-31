@@ -1,4 +1,4 @@
-def create_board_hash()
+def create_board_hash
     board = {}
     tile = 1
     positionX = 0

@@ -85,18 +85,20 @@ class  Robot
         
             def report
                 puts "Set Robot Position at #{@tile} - PositionX: #{@positionX}, PositionY: #{@positionY}, Facing: #{@direction}"
+                puts display_board(create_board_hash) 
             end
 
 end
 
 puts display_board(create_board_hash) 
 robot1 = Robot.new
-robot1.place(2,2,"NORTH")
+robot1.place(1,2,"EAST")
+robot1.move
 robot1.move
 robot1.left
 robot1.move
-robot1.right
 robot1.report
+
 
 
     
