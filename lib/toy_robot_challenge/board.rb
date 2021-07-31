@@ -1,10 +1,10 @@
-def create_board_hash
+def create_board_hash()
     board = {}
     tile = 1
     positionX = 0
     positionY = 0
     while tile <= 25
-        board[:"Tile#{tile}"] = {x: "#{positionX}", y: "#{positionY}"}
+        board[:"Tile #{tile}"] = {x: "#{positionX}", y: "#{positionY}"}
         tile += 1
         positionX += 1
         if positionX > 4
@@ -16,7 +16,7 @@ def create_board_hash
 end
 
 def print_tile(board,tile_number)
-    "#{board[:"Tile#{tile_number}"][:x]},#{board[:"Tile#{tile_number}"][:y]}"
+    "#{board[:"Tile #{tile_number}"][:x]},#{board[:"Tile #{tile_number}"][:y]}"
 end
 
 def display_board(board)

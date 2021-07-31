@@ -29,30 +29,74 @@ class  Robot
                             #  puts "POSITION NOT FOUND -- TRY AGAIN"
                         end
                     end
-              
-                puts "Set Robot Position at #{@tile} - PositionX: #{x}, PositionY: #{y}, Facing: #{direction} "
+                # puts "Set Robot Position at #{@tile} - PositionX: #{x}, PositionY: #{y}, Facing: #{direction}"
             end
 
             def move
             
+                case @direction
+                when "NORTH"
+                         @positionY +=1
+                when "SOUTH"
+                         @positionY -=1
+                when "EAST"
+                         @positionX +=1
+                when "WEST"
+                         @positionX -=1
+                else
+                         puts "INVALID MOVE"
+                end
+                # puts "Robot Will MOVE at PositionX: #{@positionX}, PositionY: #{@positionY}, Facing: #{@direction}"
+                place(@positionX,@positionY,@direction)
             end
         
             def left
+                case @direction
+                when "NORTH"
+                        @direction = "WEST"
+                when "SOUTH"
+                        @direction = "EAST"
+                when "EAST"
+                        @direction = "NORTH"
+                when "WEST"
+                        @direction = "SOUTH"
+                else
+                        
+                end
+                # puts " Robot is now FACING #{@direction}"
             
             end
         
             def right
-            
+                case @direction
+                when "NORTH"
+                        @direction = "EAST"
+                when "SOUTH"
+                        @direction = "WEST"
+                when "EAST"
+                        @direction = "SOUTH"
+                when "WEST"
+                        @direction = "NORTH"
+                else
+                        
+                end
+                # puts " Robot is now FACING #{@direction}"
             end
         
             def report
-            
+                puts "Set Robot Position at #{@tile} - PositionX: #{@positionX}, PositionY: #{@positionY}, Facing: #{@direction}"
             end
 
 end
 
 puts display_board(create_board_hash) 
 robot1 = Robot.new
-robot1.place(0,5,"NORTH")
+robot1.place(2,2,"NORTH")
+robot1.move
+robot1.left
+robot1.move
+robot1.right
+robot1.report
+
 
     

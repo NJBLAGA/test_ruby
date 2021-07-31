@@ -37,6 +37,8 @@ The gem is available as open source under the terms of the [MIT License](https:/
 ```plain
 #Robot
 # Ask user for position X, position Y and Facing
+
+
 # PLACE X,Y,F
 #  => iterate through hash
 # => if board[:x] == placeX && if board[:y] == placeY
